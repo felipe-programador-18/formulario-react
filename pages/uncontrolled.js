@@ -5,12 +5,15 @@ const Formuncontrolled = () => {
   const [show, setshow] = useState(true)
 
   const getValue = () =>{
-      console.log(Reffered.current.value) 
+      console.log(Reffered?.current?.value) 
   }
+  
+
   return (<>
       <h1>uncontrolled:!</h1>
         { show && <input type='text' placeholder='uncontrolled'  ref={Reffered} /> }
       <button type='button' onClick={getValue} >get value!</button>
+      <button type='button' onClick={() => setshow(curr => !curr)} >Hide input!</button>
   </>
   )
 }
