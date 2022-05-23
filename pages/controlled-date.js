@@ -13,19 +13,18 @@ const controlledFor = () => {
         subscribe:false
     })
     
-    const [show, setshow] = useState(true)
     const getValue = () =>{
        console.log(form) 
     }  
     
     const onChange = event =>{
         const formFielt = event.target.name
-        
+        const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value
         //now i am set value how object!!
         setform( curr =>{
             return {
                 ...curr,
-                [formFielt]: event.target.value
+                [formFielt]:value
             }
         })
     
@@ -44,7 +43,11 @@ const controlledFor = () => {
           value={form.subscribe}  
           onChange={onChange}  
           /> <br/>
-        
+          {form.subscribe && <p>
+              Thanks, for agree your e-mail with us!
+              Every week, send you email, trendinds, insight about world of programmers!!
+              </p> }
+     
         <select name='uf' onChange={onChange}  value={form.uf}>
           <option>select uf:</option>
           { uf.map ( uf => <option value={uf} key={uf} >
