@@ -9,7 +9,6 @@ const controlledFor = () => {
     }  
     
     const onChange = event =>{
-        
         setvalue(event.target.value)
     }
 
