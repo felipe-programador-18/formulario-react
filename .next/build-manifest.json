@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/controlled": [
+    "/controlled-date": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/controlled.js"
-    ],
-    "/uncontrolled": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/uncontrolled.js"
+      "static/chunks/pages/controlled-date.js"
     ]
   },
   "ampFirstPages": []
