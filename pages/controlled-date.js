@@ -57,7 +57,7 @@ const controlledFor = () => {
         </select>    
         
       <button type='button' onClick={getValue} >get value!</button>
-      <button type='button' onClick={() => setshow(curr => !curr)} >Hide input!</button>
+      <button type='button' onClick={() => setshow( curr =>  !curr)} >Hide input!</button>
        <pre> { JSON.stringify(form, null, 2)}</pre>
 
        {form === 'PJ' && <p>Please adding your date here!</p>}
