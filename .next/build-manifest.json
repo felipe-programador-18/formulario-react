@@ -25,10 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/contro-yup-date": [
+    "/controlled-validation-yup": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/contro-yup-date.js"
+      "static/chunks/pages/controlled-validation-yup.js"
+    ],
+    "/controlled-validation-yup-server-copy": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/controlled-validation-yup-server-copy.js"
     ]
   },
   "ampFirstPages": []
