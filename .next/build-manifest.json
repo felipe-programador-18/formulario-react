@@ -25,11 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/controlled-validation-yup": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/controlled-validation-yup.js"
-    ],
     "/controlled-validation-yup-server-copy": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

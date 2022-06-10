@@ -27,7 +27,7 @@ const controlledFor = () => {
     const [statusRevalidate, sethaserror] = useState(false)
     const [errors, setmorerros] = useState({})
     const[loaded, setloaded] = useState(false)
-
+    const [sending, setseding] = useState(false)
     useEffect(() => {
      // create function async to loading dates!!
       const loadDate = async () => {
@@ -74,6 +74,27 @@ const controlledFor = () => {
     
     }
     
+  // this button it work together submit!!!  
+  const submite = async () => {
+    setseding(true)
+   
+    //practice about api!!!!
+    const data = await fetch("/api/users", {
+      method: "POST",
+      headers:{
+        Accept:"application/json",
+        "Content-type":"application.json"
+      },
+      body: JSON.stringify(form)
+    })
+    const json  = await data.json()
+     setseding(false)
+     //here i can redirect to another way !!!
+  }
+
+
+
+    
 
     return ( <>
       <h1>Controlled! Loaded ... {JSON.stringify(loaded)}   </h1>
@@ -110,6 +131,9 @@ const controlledFor = () => {
         
       <button type='button' onClick={getValue}  >get value!</button>
       <button type='button' onClick={() => setform( curr =>  !curr)} >Hide input!</button>
+      <br/>
+      <button type='button' onClick={submite} disabled={sending} >send form!!!</button>
+
        <pre> { JSON.stringify(form, null, 2)}</pre>
 
        {form === 'PJ' && <p>Please adding your date here!</p>}

@@ -2,7 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/controlled-validation-yup-server-copy": "pages/controlled-validation-yup-server-copy.js",
-  "/controlled-validation-yup": "pages/controlled-validation-yup.js",
   "/api/users/[id]": "pages/api/users/[id].js"
 }
